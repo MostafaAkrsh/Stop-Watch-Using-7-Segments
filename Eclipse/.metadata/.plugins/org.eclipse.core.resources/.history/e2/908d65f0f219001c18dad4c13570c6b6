@@ -1,0 +1,14 @@
+/*
+
+ * Interrupts.h
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+#include "Headers.h"
+#ifndef INTERRUPTS_H_
+#define INTERRUPTS_H_
+
+void External_Interrupts_Init();
+
+#endif /* INTERRUPTS_H_ */

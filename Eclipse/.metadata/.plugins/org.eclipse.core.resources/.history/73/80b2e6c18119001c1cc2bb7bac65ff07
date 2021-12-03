@@ -1,0 +1,30 @@
+/*
+ * DIO.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "DIO.h"
+
+void IO_Init()
+{
+	DDRC |= 0x0F;
+	PORTC &= ~(0x0F);
+	//PORTC &= ~(1<<PC5);
+}
+
+void Display_Seconds(unsigned char seconds)
+{
+	PORTC = (seconds & 0x0F) | (PORTC & 0xF0);
+}
+
+void Display_Minutes(unsigned char minutes)
+{
+	PORTC = (minutes & 0x0F) | (PORTC & 0xF0);
+}
+
+void Display_Hours(unsigned char hours)
+{
+	PORTC = (hours & 0x0F) | (PORTC & 0xF0);
+}

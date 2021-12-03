@@ -1,0 +1,18 @@
+#include "Headers.h"
+
+ISR(TIMER1_COMPA_vect)
+{
+
+}
+
+int main()
+{
+	IO_Init();
+	External_Interrupts_Init();
+	Timer1_Init();
+
+	while(1)
+	{
+
+	}
+}

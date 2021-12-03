@@ -1,0 +1,14 @@
+/*
+ * Interrupts.c
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "Interrupts.h"
+
+void External_Interrupts_Init(){
+
+	DDRD &= ~(1<<0) & ~(1<<1);
+
+}

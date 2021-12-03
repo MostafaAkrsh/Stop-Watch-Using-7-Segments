@@ -1,0 +1,18 @@
+#include "Headers.h"
+
+ISR(TIMER1_COMPA_vect)
+{
+	PORTC ^= (1<<);
+}
+
+int main()
+{
+	IO_Init();
+	External_Interrupts_Init();
+	Timer1_Init();
+
+	while(1)
+	{
+
+	}
+}

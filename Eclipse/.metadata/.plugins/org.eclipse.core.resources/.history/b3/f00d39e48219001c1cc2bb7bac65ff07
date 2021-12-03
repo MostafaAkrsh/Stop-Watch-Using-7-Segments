@@ -1,0 +1,17 @@
+/*
+ * DIO.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "DIO.h"
+
+void IO_Init()
+{
+	DDRA |= 0x3F;
+
+	DDRC |= 0x0F;
+	PORTC &= ~(0x0F);
+}
+

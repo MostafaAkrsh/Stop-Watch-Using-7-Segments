@@ -1,0 +1,19 @@
+/*
+ * Timer.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+#include "Timer.h"
+void Timer1_Init(){
+	/* Current Timer */
+	TCNT1 = 0;
+
+	/* Compare Value */
+	OCR1B = 1000;
+
+	/* Configuration */
+	TCCR1A = (1<<FOC1A) | (1<<FOC1B) | (1<<OCIE1B);
+	TCCR1B = (1<<WGM12) | (1<<CS10) | (1<<CS12);
+
+}

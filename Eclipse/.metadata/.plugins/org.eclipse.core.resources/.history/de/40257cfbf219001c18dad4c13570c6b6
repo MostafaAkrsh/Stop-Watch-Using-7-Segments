@@ -1,0 +1,12 @@
+/*
+ * Interrupts.c
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "Interrupts.h"
+
+External_Interrupts_Init(){
+
+}

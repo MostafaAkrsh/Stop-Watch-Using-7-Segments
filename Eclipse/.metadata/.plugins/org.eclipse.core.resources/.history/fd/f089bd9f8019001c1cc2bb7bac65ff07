@@ -1,0 +1,30 @@
+/*
+ * DIO.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "DIO.h"
+
+void IO_Init()
+{
+	DDRC |= 0x0F;
+	PORTC &= ~(1<<PC5);
+	//PORTC &= ~(1<<PC5);
+}
+
+void Display_Seconds()
+{
+
+}
+
+void Display_Minutes()
+{
+
+}
+
+void Display_Hours()
+{
+
+}

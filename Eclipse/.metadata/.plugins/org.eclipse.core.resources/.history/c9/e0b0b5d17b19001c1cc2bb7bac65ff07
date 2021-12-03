@@ -1,0 +1,13 @@
+/*
+ * DIO.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "DIO.h"
+
+void IO_Init()
+{
+	DDRC |= (1<<PC5);
+}

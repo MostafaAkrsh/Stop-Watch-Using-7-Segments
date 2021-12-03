@@ -1,0 +1,12 @@
+/*
+ * Timer.cpp
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#include "Headers.h"
+
+void Timer1_Init(){
+	TCNT1 = 0;
+}

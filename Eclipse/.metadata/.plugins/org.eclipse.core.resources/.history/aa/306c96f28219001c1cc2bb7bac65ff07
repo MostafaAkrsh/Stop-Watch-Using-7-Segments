@@ -1,0 +1,22 @@
+/*
+ * DIO.h
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#ifndef DIO_H_
+#define DIO_H_
+#include "Headers.h"
+
+
+void IO_Init();
+void Display_Seconds1();
+void Display_Seconds2();
+void Display_Minutes1();
+void Display_Minutes2();
+void Display_Hours1();
+void Display_Hours2();
+
+
+#endif /* DIO_H_ */

@@ -1,0 +1,16 @@
+/*
+ * DIO.h
+ *
+ *  Created on: Sep 19, 2021
+ *      Author: LENOVO
+ */
+
+#ifndef DIO_H_
+#define DIO_H_
+
+#include "Headers.h"
+
+void IO_Init();
+
+
+#endif /* DIO_H_ */

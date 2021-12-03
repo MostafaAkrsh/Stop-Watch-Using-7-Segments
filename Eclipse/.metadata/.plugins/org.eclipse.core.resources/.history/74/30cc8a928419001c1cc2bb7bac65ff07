@@ -1,0 +1,35 @@
+#include "Headers.h"
+#include "avr/interrupt.h"
+
+unsigned char seconds = 0;
+unsigned char minutes = 0;
+unsigned char hours = 0;
+
+ISR(TIMER1_COMPA_vect)
+{
+	seconds++;
+	if(seconds > 60)
+	{
+		minutes++;
+		seconds = 0;
+	}
+	if (minutes > 60)
+	{
+		hours++;
+		minutes = 0;
+	}
+	PORTC ^= (1<<PC5);
+}
+
+int main()
+{
+	SREG |= (1<<7);
+	IO_Init();
+	Timer1_Init();
+
+	while(1)
+	{
+		 Display_Seconds1(seconds);
+
+	}
+}

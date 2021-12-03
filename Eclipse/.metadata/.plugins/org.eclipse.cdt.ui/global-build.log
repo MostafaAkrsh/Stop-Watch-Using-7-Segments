@@ -1,0 +1,2174 @@
+21:05:12 **** Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:4: warning: return type defaults to 'int'
+../main.c: In function 'ISR':
+../main.c:4: warning: type of '__vector_6' defaults to 'int'
+../main.c:6: warning: control reaches end of non-void function
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `ISR':
+../main.c:4: undefined reference to `External_Interrupts_Init'
+make: *** [stop-watch.elf] Error 1
+21:06:57 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `__vector_6':
+../main.c:4: undefined reference to `External_Interrupts_Init'
+make: *** [stop-watch.elf] Error 1
+21:07:02 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `__vector_6':
+../main.c:4: undefined reference to `External_Interrupts_Init'
+make: *** [stop-watch.elf] Error 1
+21:08:06 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `__vector_6':
+../main.c:4: undefined reference to `External_Interrupts_Init'
+make: *** [stop-watch.elf] Error 1
+21:08:28 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `__vector_6':
+../main.c:4: undefined reference to `External_Interrupts_Init'
+make: *** [stop-watch.elf] Error 1
+21:08:53 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:10:21 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:10:26 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:10:33 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:10:38 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:10:50 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:11:27 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:11:53 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:12:02 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+../Timer.c: In function 'Timer1_Init':
+../Timer.c:11: error: 'TCNT1' undeclared (first use in this function)
+../Timer.c:11: error: (Each undeclared identifier is reported only once
+../Timer.c:11: error: for each function it appears in.)
+../Timer.c:14: error: 'OCR1A' undeclared (first use in this function)
+../Timer.c:17: error: 'TCCR1B' undeclared (first use in this function)
+../Timer.c:17: error: 'WGM12' undeclared (first use in this function)
+../Timer.c:17: error: 'CS10' undeclared (first use in this function)
+../Timer.c:17: error: 'CS12' undeclared (first use in this function)
+../Timer.c:18: error: 'TCCR1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1A' undeclared (first use in this function)
+../Timer.c:18: error: 'FOC1B' undeclared (first use in this function)
+../Timer.c:18: error: 'OCIE1A' undeclared (first use in this function)
+make: *** [Timer.o] Error 1
+21:12:42 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:12:56 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:13:18 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:21 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:54 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:16:24 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:20:12 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:20 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:12: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:32 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:25:55 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     302 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:26:45 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     294 bytes (1.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:27:22 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:13: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     308 bytes (1.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:28:30 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     308 bytes (1.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:46:32 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c: In function 'IO_Init':
+../DIO.c:12: warning: left shift count >= width of type
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     726 bytes (4.4% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:46:48 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     728 bytes (4.4% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:47:29 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+./main.o: In function `__vector_6':
+../main.c:10: undefined reference to `Display_Seconds'
+../main.c:13: undefined reference to `Display_Minutes'
+../main.c:16: undefined reference to `Display_Hours'
+make: *** [stop-watch.elf] Error 1
+21:48:45 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:48:51 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:49:16 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:49:28 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:49:49 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:50:30 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:50:52 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:50:54 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+../DIO.c:18: error: conflicting types for 'Display_Seconds1'
+../DIO.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:14: error: previous declaration of 'Display_Seconds1' was here
+../DIO.c:24: error: conflicting types for 'Display_Seconds2'
+../DIO.c:25: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:15: error: previous declaration of 'Display_Seconds2' was here
+../DIO.c:30: error: conflicting types for 'Display_Minutes1'
+../DIO.c:31: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:16: error: previous declaration of 'Display_Minutes1' was here
+../DIO.c:36: error: conflicting types for 'Display_Minutes2'
+../DIO.c:37: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:17: error: previous declaration of 'Display_Minutes2' was here
+../DIO.c:42: error: conflicting types for 'Display_Hours1'
+../DIO.c:43: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:18: error: previous declaration of 'Display_Hours1' was here
+../DIO.c:48: error: conflicting types for 'Display_Hours2'
+../DIO.c:49: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../DIO.h:19: error: previous declaration of 'Display_Hours2' was here
+make: *** [DIO.o] Error 1
+21:51:23 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     752 bytes (4.6% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:52:34 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     776 bytes (4.7% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:53:19 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     736 bytes (4.5% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:57:25 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     736 bytes (4.5% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:04 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     914 bytes (5.6% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:05 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     914 bytes (5.6% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:03:08 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     914 bytes (5.6% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:04:23 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     914 bytes (5.6% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:06:09 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     908 bytes (5.5% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:06:54 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     868 bytes (5.3% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:08:14 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     876 bytes (5.3% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:09:36 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     876 bytes (5.3% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:10:29 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:     862 bytes (5.3% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:11:47 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../Headers.h:9,
+                 from ../DIO.h:10,
+                 from ../DIO.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+In file included from ../Headers.h:9,
+                 from ../Interrupts.h:8,
+                 from ../Interrupts.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    3982 bytes (24.3% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:12:16 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4210 bytes (25.7% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:13:00 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4210 bytes (25.7% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:14:00 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5328 bytes (32.5% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:14:50 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5328 bytes (32.5% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:15:42 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:28: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5328 bytes (32.5% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:04 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../Headers.h:9,
+                 from ../DIO.h:10,
+                 from ../DIO.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5316 bytes (32.4% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:17:40 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5316 bytes (32.4% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:20:03 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../Headers.h:9,
+                 from ../DIO.h:10,
+                 from ../DIO.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5292 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:20:50 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5292 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:24:28 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5292 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:50:03 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../Headers.h:9,
+                 from ../DIO.h:10,
+                 from ../DIO.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+In file included from ../Headers.h:9,
+                 from ../Interrupts.h:11,
+                 from ../Interrupts.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:44: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5530 bytes (33.8% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:51:55 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:44: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5598 bytes (34.2% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:54:38 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:44: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5564 bytes (34.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:07 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:43: warning: implicit declaration of function 'Timer1_Init'
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5564 bytes (34.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:02 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../Headers.h:9,
+                 from ../DIO.h:10,
+                 from ../DIO.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building file: ../Interrupts.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Interrupts.d" -MT"Interrupts.o" -c -o "Interrupts.o" "../Interrupts.c"
+In file included from ../Headers.h:9,
+                 from ../Interrupts.h:11,
+                 from ../Interrupts.c:8:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Interrupts.c
+ 
+Building file: ../Timer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Timer.d" -MT"Timer.o" -c -o "Timer.o" "../Timer.c"
+In file included from ../Headers.h:9,
+                 from ../Timer.h:1,
+                 from ../Timer.c:7:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Timer.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5564 bytes (34.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:21 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5574 bytes (34.0% Full)
+(.text + .data + .bootloader)
+
+Data:         11 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:01:29 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../Headers.h:9,
+                 from ../main.c:1:
+d:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: stop-watch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,stop-watch.map -mmcu=atmega16 -o "stop-watch.elf"  ./DIO.o ./Interrupts.o ./Timer.o ./main.o   
+Finished building target: stop-watch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S stop-watch.elf  >"stop-watch.lss"
+Finished building: stop-watch.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5584 bytes (34.1% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:20:08 **** Incremental Build of configuration Debug for project stop-watch ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 stop-watch.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    5584 bytes (34.1% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

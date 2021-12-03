@@ -1,0 +1,18 @@
+#include "Headers.h"
+#include "avr/interrupt.h"
+
+ISR(TIMER1_COMPA_vect)
+{
+	PORTC ^= (1<<PC5);
+}
+
+int main()
+{
+	IO_Init();
+	Timer1_Init();
+
+	while(1)
+	{
+
+	}
+}
